@@ -1,5 +1,5 @@
 require "ruby/openai"
-class Test
+class OpenApiRuby
   client = OpenAI::Client.new(access_token: "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")
 
   response = client.images.generate(
