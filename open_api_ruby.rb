@@ -1,10 +1,10 @@
 require "ruby/openai"
 class OpenApiRuby
-  client = OpenAI::Client.new(access_token: "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")
+  client = OpenAI::Client.new(access_token: "YOUR_APIKEY")
 
   response = client.images.generate(
     parameters: {
-      prompt: "golang image with background black solid"
+      prompt: "go programming image with background black solid"
     }
   )
   puts response
